@@ -1,0 +1,26 @@
+.parent{
+  position: relative;
+  height: 500px;
+  background: lightgray;
+}
+
+.box1{
+  position: relative;
+  top: 20px;
+  left: 20px;
+  background: yellow;
+}
+
+.box2{
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: red;
+}
+
+.box3{
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  background: green;
+}

@@ -1,0 +1,11 @@
+#division1{
+    background-color: red;
+    float: left;
+    width: 40%;
+}
+
+#division2{
+    background-color: blue;
+    float: right;
+    width: 40%;
+}
