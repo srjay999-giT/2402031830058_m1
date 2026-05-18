@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Array Example</title>
+</head>
+
+<body>
+
+    <script>
+
+        // Create Array
+        let car1 = "BMW";
+        let car2 = "Audi";
+        let car3 = "Tesla";
+
+        // Array
+        let cars = new Array("BMW", "Audi", "Tesla");
+
+        document.write(cars + "<br><br>");
+
+        // Access Array Elements
+        document.write(cars[0] + "<br>");
+        document.write(cars[1] + "<br>");
+        document.write(cars[2] + "<br><br>");
+
+        // Add Element
+        cars.push("Ferrari");
+
+        document.write(cars + "<br><br>");
+
+        // Remove Last Element
+        cars.pop();
+
+        document.write(cars + "<br><br>");
+
+        // Loop Through Array
+        for (let i = 0; i < cars.length; i++) {
+            document.write(cars[i] + "<br>");
+        }
+
+    </script>
+
+</body>
+</html>

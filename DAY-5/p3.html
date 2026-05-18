@@ -1,0 +1,33 @@
+```html
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ATM PIN Checking</title>
+</head>
+<body>
+  <script>
+    const correctPin = "1234";
+    let attempts = 3;
+    let isVerified = false;
+
+    while (attempts > 0) {
+      let enteredPin = prompt("Enter your ATM PIN:");
+
+      if (enteredPin === correctPin) {
+        isVerified = true;
+        document.write("<h2>PIN verified successfully.</h2>");
+        document.write("<p>Welcome to ATM Banking.</p>");
+        break;
+      } else {
+        attempts--;
+        alert("Incorrect PIN. Attempts left: " + attempts);
+      }
+    }
+
+    if (isVerified === false) {
+      document.write("<h2>Your card has been blocked.</h2>");
+      document.write("<p>You entered the wrong PIN 3 times.</p>");
+    }
+  </script>
+</body>
+</html>
