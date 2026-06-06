@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zen Chess | Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+        // THE PAGE GUARD: Redirects if not logged in
+        if (localStorage.getItem('zenLoggedIn') !== 'true') {
+            window.location.href = "login.html";
+        }
+    </script>
+</head>
+<body class="game-bg">
+
+    <nav class="zen-navbar d-flex justify-content-between align-items-center px-4 shadow-sm">
+        <div class="brand fw-bold text-light letter-space fs-4">
+            <span class="text-primary">♟</span> ZEN CHESS
+        </div>
+        <div class="nav-tabs d-none d-md-flex gap-5">
+            <a href="index.html" class="nav-tab">Practice</a>
+            <a href="vision.html" class="nav-tab">Vision Drill</a>
+            <a href="dashboard.html" class="nav-tab active">Dashboard</a>
+        </div>
+        <div class="auth-section" id="auth-section">
+            </div>
+    </nav>
+
+    <div class="container-fluid d-flex align-items-center justify-content-center main-wrapper">
+        <div class="row w-100 shadow-lg app-container rounded-4 overflow-hidden p-5" style="max-width: 1000px; background-color: #0f172a;">
+            
+            <div class="col-md-4 text-center border-end border-secondary border-opacity-25 pr-md-5 d-flex flex-column">
+                <div id="dash-avatar" class="bg-primary text-white rounded-circle d-flex justify-content-center align-items-center fw-bold mx-auto shadow-lg mb-4" style="width: 120px; height: 120px; font-size: 3rem;">?</div>
+                <h2 id="dash-username" class="text-light fw-bold mb-1">Player</h2>
+                
+                <p class="text-success small fw-bold text-uppercase mb-4">● Online</p>
+                <div class="bg-dark rounded-3 p-3 border border-secondary border-opacity-50 mb-4">
+                    <div class="text-light opacity-50 small text-uppercase fw-bold mb-1">Current Status</div>
+                    <div class="text-info fw-bold fs-5">CLUB PLAYER</div>
+                </div>
+
+                <div class="mt-auto">
+                    <button class="btn btn-outline-danger w-100 fw-bold py-2 text-uppercase" style="letter-spacing: 1px;" onclick="handleLogout()">
+                        Logout Session
+                    </button>
+                </div>
+            </div>
+
+            <div class="col-md-8 ps-md-5 mt-4 mt-md-0">
+                <h4 class="text-light fw-bold mb-4 text-uppercase letter-space">Performance Overview</h4>
+                <div class="row g-4">
+                    <div class="col-sm-6">
+                        <div class="stat-card p-4 rounded-3 h-100">
+                            <div class="text-light opacity-50 small fw-bold text-uppercase mb-2">Win Rate</div>
+                            <div class="d-flex align-items-end gap-2">
+                                <span class="text-light fs-1 fw-bold">45%</span>
+                                <span class="text-success small mb-2">↑ 2%</span>
+                            </div>
+                            <div class="progress mt-3 bg-dark" style="height: 6px; overflow: visible;">
+                                <div class="progress-bar bg-primary" style="width: 45%; box-shadow: 0 0 10px #3b82f6;"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="stat-card p-4 rounded-3 h-100">
+                            <div class="text-light opacity-50 small fw-bold text-uppercase mb-2">Accuracy</div>
+                            <div class="d-flex align-items-end gap-2">
+                                <span class="text-light fs-1 fw-bold">73%</span>
+                                <span class="text-info small mb-2">Stable</span>
+                            </div>
+                            <div class="progress mt-3 bg-dark" style="height: 6px; overflow: visible;">
+                                <div class="progress-bar bg-info" style="width: 73%; box-shadow: 0 0 10px #0dcaf0;"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="stat-card p-4 rounded-3 d-flex justify-content-between align-items-center">
+                            <div>
+                                <div class="text-light opacity-50 small fw-bold text-uppercase">Total Games</div>
+                                <div class="text-light fs-3 fw-bold">128</div>
+                            </div>
+                            <div class="text-end">
+                                <div class="text-light opacity-50 small fw-bold text-uppercase">Practice Time</div>
+                                <div class="text-light fs-3 fw-bold">14.5 Hours</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
