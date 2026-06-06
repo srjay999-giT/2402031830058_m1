@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5diff data type</title>
+</head>
+<body>
+    <h1>5 different data type usecase</h1>
+    <script>
+        let a=10;
+        let b="3";
+        let c=true;
+        let d=null;
+        let e=20.23;
+        let obj ={
+        }
+        console.log(a+obj);   
+        let arr = [10,20,30,40,50];      //10[object Object]
+        console.log(a+arr)  //1010,20,30,40,50
+        console.log(b+arr)  //310,20,30,40,50
+        console.log(c+arr)  //true10,20,30,40,50
+        console.log(d+arr)  //null10,20,30,40,50
+        console.log(e+arr)  //20.2310,20,30,40,50
+        console.log(a+b);   //103
+        console.log(a+c);   //11
+        console.log(a+d);   //10
+        console.log(a+e);   //30.23
+        console.log(a-b);   //7
+        console.log(a-c);   //9
+        console.log(a-d);   //
+        console.log(a-e);
+        console.log(b+c);
+        console.log(b+d);
+        console.log(b+e);
+        console.log(b-c);
+        console.log(b-d);
+        console.log(b-e);
+        console.log(d-e);
+        console.log(d+e);
+    </script>
+    
+</body>
+</html>

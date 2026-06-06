@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <button id="btn">Submit</button>
+    <!-- <p>This is paragraph</p> -->
+     <ul>
+        <li>Action</li>
+        <li>Service</li>
+        <li>Pages</li>
+     </ul>
+
+     <form id="form">
+        Name:<input id="name" type="text" placeholder="Enter name"/>
+        <input type="submit" />
+     </form>
+     <p id="error"></p>
+    <script>
+        console.log("Hello world");
+
+        // $("#btn").click(function (){
+        //     alert("Btn Clicked!!");
+        // })
+
+        $("ul").css({
+            "list-style-type": "none",
+            border: "1px solid black",
+            width: "80px",
+            padding: "10px 20px",
+            "border-radius": "10px"
+        })
+
+        $("#btn").css({
+            "background-color": "red",
+            "color": "white",
+            border: 'none',
+            padding: '5px 10px',
+            "border-radius": "10px"
+        })
+
+        $("button").click(function (){
+            $("ul").toggle("medium");
+        })
+
+        $("#form").submit(function (e){
+            e.preventDefault();
+            let name = $("#name").val();
+            if(name == ""){
+                $("#error").text("Name is Required!!!");
+            }else{
+                $("#error").text("");
+            }
+            console.log(name)
+        })
+    </script>
+</body>
+</html>

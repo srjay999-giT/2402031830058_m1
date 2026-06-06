@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+</head>
+<body>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <form id="form">
+        <h2>Registration form</h2><br><br>
+        <label for="fname">Name : </label>
+        <input type="text" name="" id="fname" placeholder="Enter your name" ><br><br>
+        <label for="email">Email:</label>
+        <input type="email" name="" id="email" placeholder="Enter email" ><br><br>
+        <label for="contact">contact:</label>
+        <input type="number" name="" id="contact" placeholder="Phone number">
+        <input type="submit" name="" value="Submit here">
+    </form>
+    <p id="error"></p>
+    <p id="error1"></p>
+    <p id="error2"></p>
+    <script>
+        $("#form").submit(function (e){
+            e.preventDefault();
+            let name = $("#fname").val();
+            if(name == ""){
+                $("#error").text("Name is Required!!!");
+            }
+            else{
+                $("#error").text("");
+            }
+            console.log(name)
+            let email = $("#email").val();
+            if(email == ""){
+                $("#error1").text("Email is Required!!!");
+            }
+            else{
+                $("#error1").text("");
+            }
+            console.log("Email :",email)
+            let contact = $("#contact").val();
+            if(contact == ""){
+                $("#error2").text("Contact is Required!!!");
+            }
+            else{
+                $("#error2").text("");
+            }
+            console.log(contact)
+        })
+    </script>
+    
+</body>
+</html>

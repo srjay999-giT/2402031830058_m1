@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First jquery lecture</title>
+
+      <!-- jQuery library (must include this) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</head>
+<body>
+
+    <h1 id="title">Hello World</h1>
+    <button id="btn">Click Me</button>
+
+
+    <script>
+$(document).ready(function() {
+    
+    $("#btn").click(function(){
+        $("#title").text("jai hind dosto!");
+    });
+   
+});
+</script>
+    <p id="text">Hello Vaibhav</p>
+<!-- <button id="btn">Click me</button> -->
+
+     <script>
+        // $(document).ready(function(){ -->
+    $("#btn").click(function(){
+        $("#text").hide();
+    });
+// <!-- });
+    </script> 
+</body>
+</html>
