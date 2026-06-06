@@ -1,0 +1,24 @@
+<!-- sticky-example.html -->
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>position: sticky</title>
+  <style>
+    body { font-family:sans-serif; margin:0; }
+    .sidebar { width: 200px; float: left; padding: 10px; }
+    .stickyBox { position: -webkit-sticky; position: sticky; top: 10px; background:#ffeeaa; padding:10px; border:1px solid #cc9; }
+    .main { margin-left: 220px; padding: 10px; }
+    .filler { height: 1500px; background: linear-gradient(white, #eee); }
+  </style>
+</head>
+<body>
+  <div class="sidebar">
+    <div class="stickyBox">I am sticky (top:10px). I will stick inside the viewport when you scroll down.</div>
+  </div>
+  <div class="main">
+    <h2>Content area</h2>
+    <div class="filler">Scroll to see sticky behavior.</div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!-- stacking-context.html -->
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>stacking context</title>
+  <style>
+    .parentA { position: relative; width: 300px; height:200px; background:#f8f0f0; margin: 20px; float:left; }
+    .parentB { position: relative; width: 300px; height:200px; background:#f0f8ff; margin: 20px; float:left; transform: translateZ(0); /* creates stacking context */ }
+
+    .child { position: absolute; width:120px; height:120px; top:40px; left:40px; color:white; display:flex;align-items:center;justify-content:center;}
+    .child.red { background:#e74c3c; z-index: 2; }
+    .child.green { background:#27ae60; z-index: 1; left:70px; top:70px; }
+
+    /* an element outside parents */
+    .outside { clear:both; margin-top: 260px; width: 160px; height: 160px; background: #333; color:white; display:flex; align-items:center; justify-content:center; position: relative; z-index: 999; left:-50px; }
+  </style>
+</head>
+<body>
+  <h2>Stacking context demo</h2>
+  <div class="parentA">
+    <div class="child red">A: z2</div>
+    <div class="child green">A: z1</div>
+  </div>
+
+  <div class="parentB">
+    <div class="child red">B: z2 (stack ctx)</div>
+    <div class="child green">B: z1</div>
+  </div>
+
+  <div class="outside">Outside z:999</div>
+
+  <p>Note: Even though .outside has very high z-index, if a parent forms its own stacking context, its children stack inside that context — they won't necessarily appear above everything outside unless the stacking contexts themselves are ordered.</p>
+</body>
+</html>

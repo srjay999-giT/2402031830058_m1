@@ -1,0 +1,30 @@
+<!-- zindex-example.html -->
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>z-index demo</title>
+  <style>
+    .wrap { position: relative; height: 260px; padding: 20px; background: #f5f5f5; }
+    .box {
+      position: absolute;
+      width: 140px; height: 140px;
+      display:flex; align-items:center; justify-content:center;
+      color:white; font-weight:bold;
+      border-radius:8px;
+    }
+    .red   { background:#e74c3c; top:20px; left:20px; z-index: 2; }   /* front */
+    .green { background:#27ae60; top:60px; left:60px; z-index: 1; }   /* middle */
+    .blue  { background:#3498db; top:100px; left:100px; z-index: 0; } /* back */
+  </style>
+</head>
+<body>
+  <h2>z-index simple overlap</h2>
+  <div class="wrap">
+    <div class="box blue">z:0</div>
+    <div class="box green">z:1</div>
+    <div class="box red">z:2</div>
+  </div>
+  <p>Higher <code>z-index</code> appears on top. All are <code>position:absolute</code>, so z-index applies.</p>
+</body>
+</html>

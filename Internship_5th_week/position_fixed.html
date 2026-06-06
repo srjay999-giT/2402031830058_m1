@@ -1,0 +1,49 @@
+<!-- fixed-example.html -->
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>position: fixed</title>
+  <style>
+    body { height: 2000px; margin:0; font-family: sans-serif; }
+    .fixedBar { position: fixed; top: 0; left: 0; right: 0; height: 50px; background: #004466; color: white; display:flex; align-items:center; padding:0 16px; z-index: 1000; }
+    .content { margin-top: 70px; padding: 20px; }
+  </style>
+</head>
+<body>
+  <div class="fixedBar">Fixed Header — stays at top on scroll</div>
+  <div class="content">
+    <h2>Scroll down</h2>
+    <p>Because the header is <code>position: fixed</code>, it remains visible while the page scrolls.</p>
+    <p>Lots of filler content...</p>
+    <p style="margin-top:1000px">End of page</p>
+  </div>
+</body>
+</html>
+<!-- absolute-example.html -->
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>position: absolute</title>
+  <style>
+    .card { position: relative; width: 300px; height: 180px; background:#f0f0f0; border:1px solid #aaa; margin: 30px; padding: 10px; }
+    .abs { position: absolute; top: 10px; right: 10px; background:#a6bc29; padding:8px; border:1px solid #e88; }
+    .abs2 { position: absolute; bottom: 10px; left: 10px; background:#ddffdd; padding:8px; border:1px solid #8e8; }
+  </style>
+</head>
+<body>
+  <h2>position: absolute (inside a positioned ancestor)</h2>
+  <div class="card">
+    This is the positioned ancestor (position: relative).
+    <div class="abs">Top Right (absolute)</div>
+    <div class="abs2">Bottom Left (absolute)</div>
+  </div>
+
+  <p>Notice these absolute boxes are positioned relative to the .card because it has position: relative.</p>
+</body>
+
+</html>
+
+
+

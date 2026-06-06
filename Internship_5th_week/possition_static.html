@@ -1,0 +1,39 @@
+<!-- static-example.html -->
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>position: static</title>
+  <style>
+    .box { padding: 20px; margin: 10px; background: lightblue; border: 1px solid #028; }
+  </style>
+</head>
+<body>
+  <h2>position: static (default)</h2>
+  <div class="box">Box 1 (static)</div>
+  <div class="box">Box 2 (static)</div>
+  <div class="box">Box 3 (static)</div>
+  <!-- top/left on static elements will be ignored -->
+</body>
+</html>
+
+<!-- relative-example.html -->
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>position: relative</title>
+  <style>
+    .container { padding: 20px; background:#f7f7f7; }
+    .rel { position: relative; top: 40px; left: 50px; width:150px; padding:10px; background: #ffd; border:1px solid #bb8; }
+    .sibling { margin-top: 20px; background:#eef; padding:10px; width:200px; }
+  </style>
+</head>
+<body>
+  <h2>position: relative</h2>
+  <div class="container">
+    <div class="rel">This is moved visually (top:10px, left:20px)</div>
+    <div class="sibling">Sibling below — note reserved space remains.</div>
+  </div>
+</body>
+</html>
