@@ -1,0 +1,196 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+*::selection{
+    background-color: purple;
+}
+body{
+    font-family: sans-serif;
+}
+
+.background1{
+    background-image: url("WhatsApp Image 2026-02-02 at 3.14.07 PM.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 90vh;
+}
+
+.head{
+    display: flex;                
+    justify-content: space-between; 
+    padding: 20px 50px;
+    color: white;
+}
+
+.box1{
+    display: flex;   
+    gap: 25px;      
+}
+
+.box1 div{
+    cursor: pointer;
+}
+.box2{
+    text-align: center;
+    justify-items: center;
+    color: white;
+    padding: 200px;
+}
+#big{
+    font-size: 40px;
+    letter-spacing: 1px;
+    line-height: 60px;
+}
+#small{
+    font-size: small;
+    color: gray;
+    line-height: 30px;
+}
+.box3{
+    font-size: xx-large;
+    margin: 740px;
+    color: white;
+    background-color: rgb(27, 78, 146);
+}
+.background2{
+    padding: 50px;
+    height: 90vh;
+
+}
+.box4{
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    gap: 15px;
+}
+div#icon{
+    font-size: xx-large;
+    color: rgb(27, 78, 146);
+    line-height: 60px;
+}
+div#letter{
+    font-size: small;
+    color: gray;
+    line-height: 20px;
+}
+.box5{
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    gap: 15px;
+}
+.background3{
+    padding: 100px;
+    background-image: url("WhatsApp Image 2026-02-02 at 3.14.07 PM (1).jpeg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    justify-content: center;
+    height: 90vh;
+}
+.box6{
+    font-size: xx-large;
+    color: white;
+    text-align: center;
+    margin-bottom: 30px;
+}
+div#letter1{
+    color: white;
+    font-size: small;
+    line-height: 20px;
+    text-align: center;
+}
+.box7{
+    display: flex;
+    color: white;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 30px;
+    gap: 30px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.box8{
+    display: flex;
+    color: white;
+    justify-content: center;
+    gap: 15px;
+}
+div#dot{
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: white;
+    margin-top: 30px;
+}
+div#dot:hover{
+    background-color: rgb(27, 78, 146);
+}
+.background4{
+    padding: 50px;
+    text-align: center;
+    height: 90vh;
+
+}
+.box9{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 40px;
+}
+.box10{
+    display: flex;
+    color: gray;
+    justify-content: center;
+    gap: 15px;
+}
+div#dot2{
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: gray;
+    margin-top: 30px;
+}
+div#dot2:hover{
+    background-color: rgb(27, 78, 146);
+}
+.background5{
+    padding: 80px;
+    background-image: url("WhatsApp Image 2026-02-02 at 3.14.08 PM.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    justify-content: center;
+    height: 90vh;
+}
+.box11{
+    display: flex;
+    justify-content: center;
+}
+.box11_1{
+    margin: 50px;
+    line-height: 40px;
+    
+}
+.box11_2{
+    line-height: 60px;
+    color: white;
+    margin: 50px;
+}
+
+input{
+    width: 300px;
+    background-color: transparent;
+    border-color: aliceblue;
+    border-radius: 5px;
+}
+.box12{
+    font-size: x-small;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+}
