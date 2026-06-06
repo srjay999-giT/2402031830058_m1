@@ -1,0 +1,48 @@
+*{
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+.con1{
+  background-color: rgba(7, 45, 116, 0.6);
+}
+.bg-video{
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+  
+}
+.video-container{
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  background-blend-mode: multiply;
+}
+.f-white{
+  color: white;
+}
+.navbar div{
+  color: white;
+
+}
+.navbar div:hover{
+  border: 1px solid orange;
+}
+.Graduate{
+  padding-top: 150px;
+  padding-bottom: 25px;
+}
+.your{
+  font-size: 70px;
+  padding-bottom: 35px;
+}
+.discover{
+  margin-bottom: 160px;
+}
