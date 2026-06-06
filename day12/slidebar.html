@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Menu Demo</title>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+
+    <style>
+        #menuBtn{
+            background-color: blue;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+        }
+
+        #menu{
+            display: none;
+            width: 200px;
+            background-color: lightgray;
+            padding: 10px;
+            margin-top: 5px;
+        }
+
+        #menu a{
+            display: block;
+            padding: 8px;
+            text-decoration: none;
+            color: black;
+        }
+
+        #menu a:hover{
+            background-color: lightblue;
+        }
+    </style>
+</head>
+<body>
+
+    <button id="menuBtn">☰ Menu</button>
+
+    <div id="menu">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+    </div>
+
+    <script>
+        $(document).ready(function(){
+
+            $("#menuBtn").click(function(){
+
+                $("#menu").slideToggle();
+
+            });
+
+        });
+    </script>
+
+</body>
+</html>

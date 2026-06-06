@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery Alert Box</title>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.slim.js"></script>
+
+    <style>
+        #alertBox {
+            display: none;
+            color: red;
+            border: 1px solid red;
+            padding: 10px;
+            margin-top: 10px;
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+
+    <input type="text" id="name" placeholder="Enter your name">
+
+    <button id="btn">Click Me</button>
+
+    <div id="alertBox"></div>
+
+    <script>
+        $(document).ready(function() {
+
+            $("#btn").click(function() {
+
+                let username = $("#name").val();
+
+                $("#alertBox")
+                    .text("Welcome " + username)
+                    .show();
+
+            });
+
+        });
+    </script>
+
+</body>
+</html>

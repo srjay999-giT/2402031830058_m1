@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery Image Slider</title>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+
+    <style>
+        #slider{
+            width: 500px;
+            margin: auto;
+            text-align: center;
+        }
+
+        #slider img{
+            width: 500px;
+            height: 300px;
+            border-radius: 10px;
+        }
+
+        button{
+            padding: 10px 15px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="slider">
+        <img id="slide" src="https://picsum.photos/id/10/500/300">
+    </div>
+
+    <center>
+        <button id="prev">Previous</button>
+        <button id="next">Next</button>
+    </center>
+
+    <script>
+        $(document).ready(function(){
+
+            let images = [
+                "https://picsum.photos/id/10/500/300",
+                "https://picsum.photos/id/20/500/300",
+                "https://picsum.photos/id/30/500/300"
+            ];
+
+            let index = 0;
+
+            $("#next").click(function(){
+                index++;
+                if(index >= images.length){
+                    index = 0;
+                }
+                $("#slide").attr("src", images[index]);
+            });
+
+            $("#prev").click(function(){
+                index--;
+                if(index < 0){
+                    index = images.length - 1;
+                }
+                $("#slide").attr("src", images[index]);
+            });
+
+        });
+    </script>
+
+</body>
+</html>

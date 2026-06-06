@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery FAQ Demo</title>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        .question{
+            background-color: lightblue;
+            padding: 10px;
+            border-radius: 8px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .answer{
+            display: none;
+            padding: 10px;
+            background-color: lightyellow;
+            border-left: 4px solid blue;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>FAQ Section</h2>
+
+    <div class="question">What is jQuery?</div>
+    <div class="answer">
+        jQuery is a JavaScript library used to simplify web development.
+    </div>
+
+    <div class="question">What is toggle()?</div>
+    <div class="answer">
+        toggle() hides and shows an element with a single function.
+    </div>
+
+    <div class="question">Why use jQuery?</div>
+    <div class="answer">
+        It makes DOM manipulation, events, and effects easier.
+    </div>
+
+    <script>
+        $(document).ready(function(){
+
+            $(".question").click(function(){
+
+                $(this).next(".answer").toggle();
+
+            });
+
+        });
+    </script>
+
+</body>
+</html>
