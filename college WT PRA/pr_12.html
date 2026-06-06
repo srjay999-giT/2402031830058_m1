@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>jQuery Effects Demo</title>
+<!-- jQuery CDN -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<style>
+body {
+font-family: Arial, sans-serif;
+text-align: center;
+margin-top: 50px;
+}
+#box {
+width: 100px;
+height: 100px;
+background-color: teal;
+position: relative;
+margin: 20px auto;
+}
+#panel {
+background: lightgray;
+padding: 20px;
+display: none;
+margin-top: 20px;
+}
+button {
+margin: 5px;
+padding: 10px 15px;
+}
+</style>
+</head>
+<body>
+<h2>jQuery Animation Demo</h2>
+<div id="box"></div>
+<button id="animateBtn">Animate</button>
+<button id="stopBtn">Stop</button>
+<button id="slideBtn">Slide Panel</button>
+<div id="panel">
+<p>This is a sliding panel using slideToggle().</p>
+</div>
+<script>
+$(document).ready(function(){
+// Animate the box
+$("#animateBtn").click(function(){
+$("#box").animate({
+left: '250px',
+opacity: '0.5',
+height: '150px',
+width: '150px'
+}, 2000);
+});
+// Stop animation
+$("#stopBtn").click(function(){
+$("#box").stop();
+});
+// Slide toggle panel
+$("#slideBtn").click(function(){
+$("#panel").slideToggle(1000);
+});
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>jQuery Effects + GET/POST Example</title>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<style>
+body {
+font-family: Arial;
+padding: 20px;
+}
+#box {
+width: 200px;
+height: 200px;
+background: coral;
+margin-bottom: 20px;
+display: none;
+}
+#result {
+margin-top: 20px;
+padding: 10px;
+border: 1px solid #ccc;
+}
+</style>
+</head>
+<body>
+<h2>jQuery Effects Demo</h2>
+<button id="showBtn">Show Box</button>
+<button id="hideBtn">Hide Box</button>
+<button id="fadeBtn">Fade Toggle</button>
+<button id="slideBtn">Slide Toggle</button>
+<button id="animateBtn">Animate</button>
+<div id="box"></div>
+<hr>
+<h2>GET Request</h2>
+<button id="getData">Load Data (GET)</button>
+<div id="result"></div>
+<hr>
+<h2>POST Request</h2>
+<form id="userForm">
+<input type="text" id="name" placeholder="Enter Name" required>
+<input type="email" id="email" placeholder="Enter Email" required>
+<button type="submit">Submit</button>
+</form>
+<script>
+$(document).ready(function(){
+// Effects
+$("#showBtn").click(function(){
+$("#box").show(1000);
+});
+$("#hideBtn").click(function(){
+$("#box").hide(1000);
+});
+$("#fadeBtn").click(function(){
+$("#box").fadeToggle(1000);
+});
+$("#slideBtn").click(function(){
+$("#box").slideToggle(1000);
+});
+$("#animateBtn").click(function(){
+$("#box").animate({
+left: '250px',
+height: '300px',
+width: '300px'
+});
+});
+// GET request
+$("#getData").click(function(){
+$.get("https://jsonplaceholder.typicode.com/posts/1", function(data){
+$("#result").html(
+"<h3>" + data.title + "</h3>" +
+"<p>" + data.body + "</p>"
+);
+});
+});
+// POST request
+$("#userForm").submit(function(e){
+e.preventDefault();
+var userData = {
+name: $("#name").val(),
+email: $("#email").val()
+};
+$.post("https://jsonplaceholder.typicode.com/posts", userData, function(response){
+alert("Data Submitted Successfully!\nID: " + response.id);
+});
+});
+});
+</script>
+</body>
+</html>

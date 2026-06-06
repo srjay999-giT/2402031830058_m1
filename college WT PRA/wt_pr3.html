@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Simple form</title>
+    <style>
+        nav a{
+            margin-right: 20px;
+        }
+        text{
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>  
+   <svg width="500" height="90">
+  <rect x="130" y="20" rx="20" ry="20" width="300" height="50"
+  style=stroke-width:5;opacity:0.5" />
+     <text fill="#ffffff" font-size="25" font-family="Verdana" x="170" y="54">STUDENT FORM</text>
+</svg>
+         
+    <nav>
+        <a href="C:\Users\Student\Documents\html\home_page.html">Home</a> 
+        <a href="C:\Users\Student\Documents\html\about_page.html">About us</a> 
+        <a href="C:\Users\Student\Documents\html\contact_page.html">Contact us</a>
+    </nav>
+    <section id="sec">
+        <h2>
+            Fill Out the form for Registration of COT students.
+        </h2>
+    
+    <form onsubmit="alert('Thank you! Your form has been submitted.') " ; autocomplete="off">
+        <label for="fname">First Name:</label>
+        <input type="text" id="fname" name="fname" placeholder = "First name" required><br>
+          <p></p>
+        <label for="lname">Last name:</label>
+        <input type="text" id="lname" name="lname" placeholder = "Last name" required><br>
+          <p></p>
+        <label for="email">Email Id:</label>
+        <input type="email" id="email" name="email" placeholder = " abc@email.com"  required><br>
+          <p></p>
+        <label for="enroll">Enrollment number:</label>
+        <input type="number" id="enroll" name="enroll" placeholder = "1233456" required><br>
+          <p></p>
+        <label for="dob">Date of Birth</label>
+        <input type="date" id="dob" name="dob"><br><p></p>
+        <label for="gender">Gender : </label>
+        <input type="radio" id="gender" name="gender" value="Male">
+        <label for="gender">Male</label>
+        <input type="radio" id="gender" name="gender" value="Female">
+        <label for="gender">Female</label>
+        <input type="radio" id="gender" name="gender" value="Others">
+        <label for="gender">Others</label>
+        <p></p>
+        <label for="college">College : </label>
+        <input type="radio" id="college" name="college" value="ASOIT">
+        <label for="college">ASOIT</label>
+        <input type="radio" id="college" name="college" value="SOCET">
+        <label for="college">SOCET</label><br>
+        <p></p>
+        <p></p>
+          <div id="div">
+        <button type="submit" id = "btn" formaction="C:\Users\Student\Documents\html\home_page.html">Submit</button>
+            </div>'
+
+    </form>
+         
+    </section>
+         
+         
+    <footer>
+        <h2>All Rights are reserved to SilverOakUniversity</h2>
+        <p>All the details that are asked here will remain confidential and will not <br> be shared with anyone</p>
+    </footer>
+
+</body>
+
+</html>

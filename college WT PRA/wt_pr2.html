@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Simple form</title>
+    <style>
+        section h2{
+            color: rgb(90, 3, 3);
+        }
+        nav a{
+            margin-right: 10px;
+            color: rgb(7, 7, 81);
+        }
+        input{
+            margin-right: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>STUDENT FORM</h1>
+    </header>
+    <nav>
+        <a href="C:\Users\Student\Documents\html\home_page.html">Home</a>    
+        <a href="C:\Users\Student\Documents\html\about_page.html">About us</a>    
+        <a href="C:\Users\Student\Documents\html\contact_page.html">Contact us</a>
+    </nav>
+    <section>
+        <h2>
+            Fill Out the form for Registration of COT students.
+        </h2>
+    </section>
+    <hr>
+    <form>
+        <label for="fname">First Name:</label>
+        <input type="text" id="fname" name="fname">
+        <label for="lname">Last name:</label>
+        <input type="text" id="lname" name="lname" style="width: 220px;"><br><br>
+        <label for="email">Email Id:</label>
+        <input type="text" id="email" name="email" style="width: 180px;">
+        <label for="enroll">Enrollment number:</label>
+        <input type="text" id="enroll" name="enroll"><br><br>
+        <label for="dob">Date of Birth</label>
+        <input type="date" id="dob" name="dob"><br><br> 
+        <label for="gender"><b>Select your Gender</b></label><br>
+        <input type="radio" id="gender" name="gender" value="Male">
+        <label for="gender">Male</label>
+        <input type="radio" id="gender" name="gender" value="Female">
+        <label for="gender">Female</label>
+        <input type="radio" id="gender" name="gender" value="Others">
+        <label for="gender">Others</label>
+        <p></p>
+        <label for="college"><b>College</b></label><br>
+        <input type="radio" id="college" name="college" value="ASOIT">
+        <label for="college">ASOIT</label>
+        <input type="radio" id="college" name="college" value="SOCET">
+        <label for="college">SOCET</label><br>
+        <p></p>
+        <p></p>
+        <button type="submit" formaction="C:\Users\Student\Documents\html\home_page.html">Submit Data</button>
+
+    </form>
+    <hr>
+    <footer>
+        <h2>All Rights are reserved to SilverOakUniversity</h2>
+        <p>All the details that are asked here will remain confidential and will not <br> be shared with anyone</p>
+    </footer>
+
+</body>
+
+</html>
