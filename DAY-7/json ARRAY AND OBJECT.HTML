@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JSON Array of Objects</title>
+</head>
+<body>
+
+<h2>Students Data</h2>
+
+<p id="demo"></p>
+
+<script>
+
+let students = [
+    {
+        name: "Jay",
+        age: 20,
+        city: "Ahmedabad"
+    },
+    {
+        name: "Riya",
+        age: 21,
+        city: "Surat"
+    },
+    {
+        name: "Aman",
+        age: 22,
+        city: "Rajkot"
+    }
+];
+
+let output = "";
+
+for(let i = 0; i < students.length; i++) {
+    output +=
+    "Name: " + students[i].name + "<br>" +
+    "Age: " + students[i].age + "<br>" +
+    "City: " + students[i].city + "<br><br>";
+}
+
+document.getElementById("demo").innerHTML = output;
+
+</script>
+
+</body>
+</html>

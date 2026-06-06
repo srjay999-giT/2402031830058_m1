@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Form Events Example</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:Arial, Helvetica, sans-serif;
+    }
+
+    body{
+      background:#f2f2f2;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      height:100vh;
+    }
+
+    .container{
+      width:500px;
+      background:white;
+      padding:25px;
+      border-radius:10px;
+      box-shadow:0 0 10px rgba(0,0,0,0.2);
+    }
+
+    h1{
+      text-align:center;
+      margin-bottom:20px;
+      color:#009688;
+    }
+
+    input,
+    textarea,
+    select{
+      width:100%;
+      padding:10px;
+      margin:10px 0;
+      border:2px solid #ccc;
+      border-radius:5px;
+      font-size:16px;
+    }
+
+    button{
+      padding:10px 20px;
+      border:none;
+      background:#009688;
+      color:white;
+      font-size:16px;
+      border-radius:5px;
+      cursor:pointer;
+      margin-top:10px;
+    }
+
+    button:hover{
+      background:#00796b;
+    }
+
+    #output{
+      margin-top:20px;
+      background:#e0f2f1;
+      padding:15px;
+      border-radius:5px;
+      min-height:80px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <h1>Form Events in JavaScript 🚀</h1>
+
+    <form id="myForm">
+
+      <!-- FOCUS EVENT -->
+      <input 
+        type="text"
+        id="name"
+        placeholder="Enter Name"
+        onfocus="focusEvent()"
+        onblur="blurEvent()"
+      />
+
+      <!-- CHANGE EVENT -->
+      <select id="course" onchange="changeEvent()">
+        <option value="">Select Course</option>
+        <option value="HTML">HTML</option>
+        <option value="CSS">CSS</option>
+        <option value="JavaScript">JavaScript</option>
+      </select>
+
+      <!-- SELECT EVENT -->
+      <textarea 
+        id="message"
+        rows="4"
+        placeholder="Select some text here"
+        onselect="selectEvent()"
+      ></textarea>
+
+      <!-- SUBMIT EVENT -->
+      <button type="submit">Submit</button>
+
+      <!-- RESET EVENT -->
+      <button type="reset">Reset</button>
+
+    </form>
+
+    <div id="output">
+      Event messages will appear here...
+    </div>
+
+  </div>
+
+  <script>
+
+    let output = document.getElementById("output");
+
+    // FOCUS EVENT
+    function focusEvent(){
+      output.innerHTML = "🎯 Input field is focused";
+      document.getElementById("name").style.background = "#fff9c4";
+    }
+
+    // BLUR EVENT
+    function blurEvent(){
+      output.innerHTML = "🌙 Input field lost focus";
+      document.getElementById("name").style.background = "white";
+    }
+
+    // CHANGE EVENT
+    function changeEvent(){
+      let course = document.getElementById("course").value;
+      output.innerHTML = "🔄 Course changed to: " + course;
+    }
+
+    // SELECT EVENT
+    function selectEvent(){
+      output.innerHTML = "✂️ Text selected inside textarea";
+    }
+
+    // SUBMIT EVENT
+    document.getElementById("myForm").onsubmit = function(event){
+      event.preventDefault();
+
+      output.innerHTML = "✅ Form Submitted Successfully";
+    }
+
+    // RESET EVENT
+    document.getElementById("myForm").onreset = function(){
+      output.innerHTML = "🧹 Form Reset Completed";
+    }
+
+  </script>
+
+</body>
+</html>
