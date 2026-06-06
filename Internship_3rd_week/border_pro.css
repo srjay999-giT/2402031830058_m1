@@ -1,0 +1,24 @@
+table{
+    border: solid 2px none;
+    border-collapse: collapse;
+    border-width: 1px;
+    background-color: gray;
+}
+td{
+    border: groove 2px black;
+    border-width: 1px;
+    background-color: gray;
+}
+th{
+    border: groove 2px black;
+    border-width: 1px;
+    background-color: gray;
+}
+tr{
+    border: groove 2px black;
+    border-width: 2px;
+    background-color: gray;
+    border-radius: 0;
+    border-top: solid lawngreen;
+
+}

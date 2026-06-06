@@ -1,0 +1,35 @@
+*{
+    background-color: black;
+    color:white;
+}
+table{
+    border: solid 2px black;
+    border-collapse: separate;
+    padding: 20px;
+    margin: 10px;
+    vertical-align: middle;
+    border-radius: 25px;
+    border-spacing: 10px;
+    
+}
+th{
+    border: solid 2px black;
+  
+}
+tr{
+    border: solid 2px black;
+    background-color: darkred;
+    padding: 20px;
+    margin: 10px;
+    border-radius:25px;
+    border-spacing: 10px;
+}
+td{
+    border: solid 2px black;
+    text-align: center;
+    background-color: darkred;
+    border-radius: 25px;
+    padding: 20px;
+   border-spacing: 10px;
+}
+

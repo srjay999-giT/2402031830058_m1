@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculator UI Using Table</title>
+    <style>
+        body{
+            background:#e0e0e0;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            height:100vh;
+            font-family:Arial;
+        }
+
+        table{
+            background:#222;
+            padding:15px;
+            border-radius:15px;
+            box-shadow:0 10px 25px rgba(0,0,0,0.4);
+            border-spacing:10px;
+        }
+
+        td{
+            width:55px;
+            height:45px;
+            text-align:center;
+            vertical-align:middle;
+            font-size:18px;
+            color:white;
+            background:#444;
+            border-radius:10px;
+        }
+
+        .display{
+            background:black;
+            color:#0f0;
+            font-size:26px;
+            text-align:right;
+            padding-right:10px;
+        }
+
+        .operator{
+            background:orange;
+            color:white;
+        }
+
+        .equal{
+            background:#00aaff;
+        }
+    </style>
+</head>
+<body>
+
+<table>
+    <tr>
+        <td colspan="4" class="display">0</td>
+    </tr>
+
+    <tr>
+        <td class="operator">C</td>
+        <td class="operator">⌫</td>
+        <td class="operator">%</td>
+        <td class="operator">÷</td>
+    </tr>
+
+    <tr>
+        <td>7</td>
+        <td>8</td>
+        <td>9</td>
+        <td class="operator">×</td>
+    </tr>
+
+    <tr>
+        <td>4</td>
+        <td>5</td>
+        <td>6</td>
+        <td class="operator">−</td>
+    </tr>
+
+    <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+        <td class="operator">+</td>
+    </tr>
+
+    <tr>
+        <td colspan="2">0</td>
+        <td>.</td>
+        <td class="equal">=</td>
+    </tr>
+</table>
+
+</body>
+</html>
