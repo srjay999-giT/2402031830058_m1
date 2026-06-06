@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Learnify</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:'Poppins',sans-serif;
+    }
+
+    body{
+      background:#0f172a;
+      color:white;
+      overflow-x:hidden;
+    }
+
+    a{
+      text-decoration:none;
+      color:white;
+    }
+
+    section{
+      padding:80px 10%;
+    }
+
+    h2{
+      font-size:40px;
+      margin-bottom:40px;
+      text-align:center;
+    }
+
+    /* ================= NAVBAR ================= */
+
+    nav{
+      position:fixed;
+      top:20px;
+      left:50%;
+      transform:translateX(-50%);
+      width:90%;
+      padding:18px 40px;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      background:rgba(255,255,255,0.08);
+      backdrop-filter:blur(15px);
+      border:1px solid rgba(255,255,255,0.1);
+      border-radius:20px;
+      z-index:1000;
+    }
+
+    .logo{
+      font-size:28px;
+      font-weight:700;
+      color:#38bdf8;
+    }
+
+    .nav-links{
+      display:flex;
+      gap:30px;
+    }
+
+    .nav-links a{
+      transition:0.3s;
+    }
+
+    .nav-links a:hover{
+      color:#38bdf8;
+    }
+
+    .nav-btns button{
+      padding:10px 18px;
+      border:none;
+      border-radius:12px;
+      margin-left:10px;
+      cursor:pointer;
+      font-weight:600;
+      transition:0.3s;
+    }
+
+    .login-btn{
+      background:transparent;
+      color:white;
+      border:1px solid rgba(255,255,255,0.2);
+    }
+
+    .signup-btn{
+      background:#38bdf8;
+      color:black;
+    }
+
+    .signup-btn:hover{
+      transform:scale(1.05);
+    }
+
+    /* ================= HERO ================= */
+
+    .hero{
+      min-height:100vh;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:60px;
+    }
+
+    .hero-text{
+      flex:1;
+    }
+
+    .hero-text h1{
+      font-size:65px;
+      line-height:1.2;
+      margin-bottom:20px;
+    }
+
+    .hero-text p{
+      color:#cbd5e1;
+      margin-bottom:30px;
+      font-size:18px;
+    }
+
+    .hero-buttons button{
+      padding:14px 24px;
+      border:none;
+      border-radius:14px;
+      cursor:pointer;
+      margin-right:15px;
+      font-size:16px;
+      transition:0.3s;
+    }
+
+    .start-btn{
+      background:#38bdf8;
+      color:black;
+      font-weight:600;
+    }
+
+    .explore-btn{
+      background:transparent;
+      border:1px solid rgba(255,255,255,0.2);
+      color:white;
+    }
+
+    .hero-image{
+      flex:1;
+      display:flex;
+      justify-content:center;
+    }
+
+    .hero-image img{
+      width:100%;
+      max-width:500px;
+      animation:float 3s ease-in-out infinite;
+    }
+
+    @keyframes float{
+      0%,100%{
+        transform:translateY(0);
+      }
+      50%{
+        transform:translateY(-15px);
+      }
+    }
+
+    /* ================= COURSES ================= */
+
+    .cards{
+      display:flex;
+      gap:30px;
+      flex-wrap:wrap;
+      justify-content:center;
+    }
+
+    .card{
+      background:rgba(255,255,255,0.05);
+      padding:25px;
+      border-radius:20px;
+      width:300px;
+      transition:0.3s;
+      border:1px solid rgba(255,255,255,0.08);
+    }
+
+    .card:hover{
+      transform:translateY(-10px);
+      box-shadow:0 10px 25px rgba(0,0,0,0.3);
+    }
+
+    .card img{
+      width:100%;
+      border-radius:14px;
+      margin-bottom:20px;
+    }
+
+    .card h3{
+      margin-bottom:10px;
+    }
+
+    .card p{
+      color:#cbd5e1;
+      margin-bottom:15px;
+    }
+
+    .card button{
+      padding:10px 18px;
+      border:none;
+      border-radius:10px;
+      background:#38bdf8;
+      cursor:pointer;
+      font-weight:600;
+    }
+
+    /* ================= FEATURES ================= */
+
+    .features{
+      display:flex;
+      justify-content:center;
+      gap:30px;
+      flex-wrap:wrap;
+    }
+
+    .feature-box{
+      width:280px;
+      background:rgba(255,255,255,0.05);
+      padding:30px;
+      border-radius:20px;
+      text-align:center;
+    }
+
+    .feature-box h3{
+      margin:20px 0 10px;
+    }
+
+    .feature-box p{
+      color:#cbd5e1;
+    }
+
+    /* ================= CATEGORIES ================= */
+
+    .categories{
+      display:flex;
+      justify-content:center;
+      flex-wrap:wrap;
+      gap:20px;
+    }
+
+    .category{
+      padding:16px 28px;
+      background:#1e293b;
+      border-radius:40px;
+      transition:0.3s;
+      cursor:pointer;
+    }
+
+    .category:hover{
+      background:#38bdf8;
+      color:black;
+    }
+
+    /* ================= REVIEWS ================= */
+
+    .reviews{
+      display:flex;
+      justify-content:center;
+      gap:30px;
+      flex-wrap:wrap;
+    }
+
+    .review-card{
+      width:320px;
+      background:rgba(255,255,255,0.05);
+      padding:30px;
+      border-radius:20px;
+    }
+
+    .review-card p{
+      color:#cbd5e1;
+      margin-bottom:20px;
+    }
+
+    /* ================= CTA ================= */
+
+    .cta{
+      text-align:center;
+      background:linear-gradient(to right,#06b6d4,#3b82f6);
+      border-radius:30px;
+      padding:80px 20px;
+    }
+
+    .cta h2{
+      margin-bottom:20px;
+    }
+
+    .cta button{
+      padding:14px 28px;
+      border:none;
+      border-radius:14px;
+      background:black;
+      color:white;
+      font-size:16px;
+      cursor:pointer;
+    }
+
+    /* ================= FOOTER ================= */
+
+    footer{
+      padding:40px 10%;
+      text-align:center;
+      color:#94a3b8;
+    }
+
+    /* ================= RESPONSIVE ================= */
+
+    @media(max-width:900px){
+
+      .hero{
+        flex-direction:column;
+        text-align:center;
+        padding-top:120px;
+      }
+
+      .hero-text h1{
+        font-size:45px;
+      }
+
+      .nav-links{
+        display:none;
+      }
+
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <!-- ================= NAVBAR ================= -->
+
+  <nav>
+    <div class="logo">Learnify</div>
+
+    <div class="nav-links">
+      <a href="#">Home</a>
+      <a href="#">Courses</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </div>
+
+    <div class="nav-btns">
+      <button class="login-btn">Login</button>
+      <button class="signup-btn">Sign Up</button>
+    </div>
+  </nav>
+
+  <!-- ================= HERO SECTION ================= -->
+
+  <section class="hero">
+
+    <div class="hero-text">
+      <h1>Learn Skills <br> Build Future 🚀</h1>
+
+      <p>
+        Interactive online courses for students and creators.
+        Learn modern skills with beautiful lessons.
+      </p>
+
+      <div class="hero-buttons">
+        <button class="start-btn">Start Learning</button>
+        <button class="explore-btn">Explore Courses</button>
+      </div>
+    </div>
+
+    <div class="hero-image">
+      <img src="https://cdn-icons-png.flaticon.com/512/3135/3135755.png">
+    </div>
+
+  </section>
+
+  <!-- ================= POPULAR COURSES ================= -->
+
+  <section>
+
+    <h2>Popular Courses</h2>
+
+    <div class="cards">
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085">
+        <h3>Web Development</h3>
+        <p>Learn HTML, CSS & JavaScript.</p>
+        <button>Start</button>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4">
+        <h3>Python Basics</h3>
+        <p>Start coding with Python easily.</p>
+        <button>Start</button>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1559028012-481c04fa702d">
+        <h3>UI/UX Design</h3>
+        <p>Create modern app & website designs.</p>
+        <button>Start</button>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- ================= FEATURES ================= -->
+
+  <section>
+
+    <h2>Why Choose Us</h2>
+
+    <div class="features">
+
+      <div class="feature-box">
+        <h3>📚 Easy Learning</h3>
+        <p>Simple and beginner friendly lessons.</p>
+      </div>
+
+      <div class="feature-box">
+        <h3>🎥 HD Videos</h3>
+        <p>High quality learning experience.</p>
+      </div>
+
+      <div class="feature-box">
+        <h3>📈 Track Progress</h3>
+        <p>Monitor your learning journey.</p>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- ================= CATEGORIES ================= -->
+
+  <section>
+
+    <h2>Categories</h2>
+
+    <div class="categories">
+      <div class="category">💻 Programming</div>
+      <div class="category">🎨 Design</div>
+      <div class="category">🤖 AI</div>
+      <div class="category">📈 Marketing</div>
+      <div class="category">💼 Business</div>
+    </div>
+
+  </section>
+
+  <!-- ================= REVIEWS ================= -->
+
+  <section>
+
+    <h2>Student Reviews</h2>
+
+    <div class="reviews">
+
+      <div class="review-card">
+        <p>
+          “This platform made learning super fun and easy.”
+        </p>
+        <h4>- Priya</h4>
+      </div>
+
+      <div class="review-card">
+        <p>
+          “Beautiful design and beginner friendly courses.”
+        </p>
+        <h4>- Rahul</h4>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- ================= CTA ================= -->
+
+  <section>
+
+    <div class="cta">
+      <h2>Start Your Learning Journey Today 🚀</h2>
+      <button>Join Now</button>
+    </div>
+
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+
+  <footer>
+    © 2026 Learnify. All Rights Reserved.
+  </footer>
+
+  <script>
+
+    console.log("Learnify Website Loaded 🚀");
+
+  </script>
+
+</body>
+</html>
