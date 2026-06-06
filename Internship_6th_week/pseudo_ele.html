@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+p::before { content: "🔥 "; }
+p::after { content: " ✔"; color: green; }
+p::first-letter { font-size: 40px; color: red; }
+p::first-line { font-weight: bold; }
+
+input::placeholder {
+    color: rgb(166, 23, 23);
+    font-style: italic;
+}
+
+li::marker {
+    color: blue;
+}
+</style>
+</head>
+<body>
+
+<p>This is pseudo-element example paragraph.</p>
+
+<input type="text" placeholder="Enter your name">
+
+<ul>
+  <li>HTML</li>
+  <li>CSS</li>
+</ul>
+
+</body>
+</html>

@@ -1,0 +1,49 @@
+body{
+    background-image: url("anime-landscape-person-traveling.jpg");
+    background-size: cover;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    gap: 20px;
+}
+.box1{
+    height: 200px;
+    width: 200px;
+    justify-items: center;
+}
+@media (max-width:550px){
+    body{
+        background-color: aqua;
+        background-image: none;
+    }
+    .container{
+        flex-wrap: wrap;
+    }
+    h1{
+        color: cadetblue;
+    }
+    h3{
+        color: chartreuse;
+    }
+    .box1{
+        border: solid 1px black;
+        align-items: center;
+    }
+}
+@media (min-width:551px) and (max-width:900px){
+   
+    .container{
+        flex-wrap: wrap;
+    }
+    h1{
+        color: cadetblue;
+    }
+    h3, .box1{
+        color: chartreuse;
+    }
+    .box1{
+        border: solid 2px greenyellow;
+    }
+}

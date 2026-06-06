@@ -1,0 +1,277 @@
+/* @media(max-width:1360px){
+    .background2{
+        height: 220vh;
+    }
+    .container3{
+        margin-left: 100px;
+    }
+  
+.img-right{
+    height:400px; 
+    width:350px;
+}
+.img2-right{
+    padding-top: 60px;
+    height: 320px;
+}
+.button1{
+    font-size: small;
+    padding: 10px;
+    width: 120px;
+}
+}
+@media(max-width:1285px){
+    .background2{
+        height: 250vh;
+    }
+    .container3{
+        margin-left: 60px;
+    }
+}
+@media(max-width:1210px){
+    .email{
+    width: auto;
+}
+.go_to_top{
+    justify-content: right;
+    width: auto; 
+    cursor: pointer;
+}
+    
+    .container3{
+    display: flex;
+    margin-top: 20px;
+    margin-left: 50px;
+    gap: 50px;
+    justify-content: space-between;
+}
+.container3_1{
+    width: auto;
+    align-content: center;
+    height: auto;
+}
+.con3_1_1{
+    font-size: x-large;
+}
+.con3_1_2{
+    color: red;
+    font-size: x-large;
+    line-height: 40px;
+}
+.con3_1_3{
+    color: rgb(125, 125, 125);
+    font-size: small;
+    margin-top: 20px;
+}
+.container3_2{
+    height: 400px;
+}
+
+ .container3{
+        margin-left: 100px;
+    }
+  
+.img-right{
+    height:400px; 
+    width:350px;
+}
+.img2-right{
+    padding-top: 60px;
+    height: 320px;
+}
+.button1{
+    font-size: small;
+    padding: 10px;
+    width: 120px;
+}
+.i1{
+    width: 200px;
+    font-size: small;
+    line-height: 20px;
+    margin-right: 20px;
+    height: 40px;
+    margin-bottom: 20px;
+}
+.t1{
+    width: 425px;
+    height: 120px;
+    font-size: small;
+    line-height: 20px;
+    margin-bottom: 20px;
+}
+.button2{
+    margin-top: 20px;
+    text-align: center;
+    font-size: small;
+    background-color: red;
+    color: white;
+    height: 40px;
+    width: 425px;
+    align-content: center;
+    justify-content: center;
+    border-radius: 5px;
+    margin-right: 15px;
+}
+
+}
+@media(max-width:1075px){
+    .background2{
+        height: 280vh;
+    }
+}
+@media (max-width:1024px){
+    .background1{
+    height: 80vh;
+}
+    header{
+    
+    padding-right: 50px;
+}
+
+.logo img{
+    width: 120px;
+    margin-top: 15px;
+    margin-left: 50px;
+}
+
+nav{
+    font-size: small;
+    gap: 25px;
+}
+
+.container1{
+    margin-top: 140px;
+}
+.con1-1{
+    
+    margin-bottom: 5px;
+}
+.con1-2{
+    font-size: x-large;
+    line-height: 40px;
+}
+.con1-3{
+    padding: 10px;
+    margin-top: 5px;
+}
+.center_box{
+    width: 80%;
+    padding: 25px;
+    margin-left: 10%;
+    top: 65vh;
+}
+ .c_box1{
+    gap: 60px;
+ }
+/* }
+.pick{
+    padding-left: 10px;
+}
+.caterory{
+    width: auto;
+}
+.price{
+    width: auto;
+}
+.plan{
+    width: auto;
+} */ 
+/* .c_box2{
+    gap: 35px;
+    margin-bottom: 30px;
+}
+.background2{
+    height: 290vh;
+}
+.box1{
+    margin-top: 150px;
+    margin-left: 110px;
+    font-size: x-large;
+}
+.box2{
+    margin-left: 110px;
+}
+.container2{
+    gap: 30px;
+}
+.con2_1{
+    border-radius: 5px;
+    width: 560px;
+    height: 500px;
+}
+.con2_2{
+    flex-wrap: wrap;
+    width: auto;
+    height: auto;
+}
+
+.c2_2_1{
+    line-height: 60px;
+    font-size: small;
+}
+.c2_2_2{
+    line-height: 20px;
+}
+.container3{
+    display: flex;
+    margin-top: 20px;
+    margin-left: 50px;
+    gap: 50px;
+}
+.container3_1{
+    width: 450px;
+    align-content: center;
+    height: 350px;
+}
+.con3_1_1{
+    font-size: x-large;
+}
+.con3_1_2{
+    color: red;
+    font-size: x-large;
+    line-height: 40px;
+}
+.con3_1_3{
+    color: rgb(125, 125, 125);
+    font-size: x-small;
+    margin-top: 20px;
+}
+.container3_2{
+    display: flex;
+    height: 350px;
+    align-content: center;
+}
+.button1{
+    font-size: xx-small;
+    background-color: red;
+    color: white;
+    width: 90px ;
+    padding: 13px;
+    margin-top: 30px;
+    border-radius: 5px;
+}
+
+}  */
+/* .c_box1_1{
+    
+} */
+/* .c_box2{
+    display: flex;
+    gap: 40px;
+} */
+/* .work
+{
+    width: 290px;
+}
+.pick{
+    padding-left: 8px;
+}
+.caterory{
+    width: 265px;
+}
+.price{
+    width: 230px;
+}
+.plan{
+    width: 250px; */
+/* } */

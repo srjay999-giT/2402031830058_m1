@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Layout</title>
+
+  <style>
+
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body{
+      background: #f2f2f2;
+      padding: 20px;
+    }
+
+    /* Main Container */
+    .container{
+      max-width: 1100px;
+      margin: auto;
+      border: 3px solid black;
+      padding: 15px;
+      background: white;
+    }
+
+    /* Common Style */
+    header,
+    nav,
+    section,
+    article,
+    aside,
+    footer{
+      color: white;
+      font-size: 28px;
+      font-weight: bold;
+      text-align: center;
+      padding: 40px;
+      margin-bottom: 15px;
+      border: 2px solid black;
+    }
+
+    /* Desktop Colors */
+    header{
+      background: #ff2d2d;
+    }
+
+    nav{
+      background: #13b5d1;
+    }
+
+    section{
+      background: #f2b654;
+    }
+
+    article{
+      background: #f78c4a;
+    }
+
+    aside{
+      background: #e754b3;
+    }
+
+    footer{
+      background: #7d7d7d;
+    }
+
+    /* Middle Layout */
+    .middle{
+      display: flex;
+      gap: 15px;
+    }
+
+    .left{
+      flex: 2;
+      display: flex;
+      flex-direction: column;
+    }
+
+    aside{
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    /* ========================= */
+    /* Tablet View */
+    /* ========================= */
+
+    @media (max-width: 992px){
+
+      body{
+        background: #dff6ff;
+      }
+
+      header{
+        background: #0066cc;
+      }
+
+      nav{
+        background: #009688;
+      }
+
+      section{
+        background: #ff9800;
+      }
+
+      article{
+        background: #ff5722;
+      }
+
+      aside{
+        background: #9c27b0;
+      }
+
+      footer{
+        background: #424242;
+      }
+
+      .middle{
+        flex-direction: column;
+      }
+
+      header,
+      nav,
+      section,
+      article,
+      aside,
+      footer{
+        font-size: 24px;
+      }
+    }
+
+    /* ========================= */
+    /* Mobile View */
+    /* ========================= */
+
+    @media (max-width: 600px){
+
+      body{
+        background: #111;
+      }
+
+      .container{
+        border-color: white;
+      }
+
+      header{
+        background: #ff1744;
+      }
+
+      nav{
+        background: #00e5ff;
+        color: black;
+      }
+
+      section{
+        background: #ffd600;
+        color: black;
+      }
+
+      article{
+        background: #ff9100;
+      }
+
+      aside{
+        background: #ff00aa;
+      }
+
+      footer{
+        background: #616161;
+      }
+
+      header,
+      nav,
+      section,
+      article,
+      aside,
+      footer{
+        padding: 25px;
+        font-size: 20px;
+      }
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <header>
+      &lt;header&gt;
+    </header>
+
+    <nav>
+      &lt;nav&gt;
+    </nav>
+
+    <div class="middle">
+
+      <div class="left">
+
+        <section>
+          &lt;section&gt;
+        </section>
+
+        <article>
+          &lt;article&gt;
+        </article>
+
+      </div>
+
+      <aside>
+        &lt;aside&gt;
+      </aside>
+
+    </div>
+
+    <footer>
+      &lt;footer&gt;
+    </footer>
+
+  </div>
+
+</body>
+</html>
