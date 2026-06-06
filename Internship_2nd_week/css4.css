@@ -1,0 +1,39 @@
+/*--------------------------------pseudo class--------------------------------- */
+span:hover{
+    background-color: aqua;
+    color: black;
+}
+button:active{
+    background-color: green;
+}
+input:focus{
+    border: solid 4px green;
+}
+li:first-child{
+    color: purple;
+}
+li:last-child{
+    color: red;
+}
+li:nth-child(2){
+    color: aqua;
+}
+li:nth-child(3){
+    color: palevioletred;
+}
+input:checked{
+    height: 20px;
+    width: 20px;
+}
+input:disabled{
+    background-color: gray;
+}
+input:valid{
+    border: solid 2px green;
+}
+input:invalid{
+    border: solid 2px red;
+}
+a:visited {
+    color: purple;
+}

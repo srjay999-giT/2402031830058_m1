@@ -1,0 +1,28 @@
+*{
+    background-color: aqua;
+}
+p{
+    text-align: center;
+    color: darkgreen;
+}
+.class{
+     border: 2px solid black;
+}
+
+#id1{
+    background-color: blueviolet;
+
+}
+div p{
+    font-style: italic;
+}
+pre p{
+    text-align: right;
+}
+h1+p{
+    text-align: left;
+}
+h1,p,div{
+    border: solid 2px black;
+    border-collapse: collapse;
+}

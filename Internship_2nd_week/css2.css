@@ -1,0 +1,38 @@
+.box1{
+  width: 300px;
+  height: 150px;
+  border: 2px solid black;
+  background-image: url("passport-size_v.jpg");
+  background-repeat: repeat-x;
+  
+}
+.box2{
+  width: 300px;
+  height: 150px;
+  border: 2px solid black;
+  background-image : url("passport-size_v.jpg") ;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
+.box3{
+  height: 300px;
+  background-image: url("images.jpg");
+  background-attachment: fixed;
+}
+.box4{
+  width: 300px;
+  height: 150px;
+  padding: 20px;
+  border: 5px solid red;
+  background-color: yellow;
+  background-clip: content-box;
+}
+.box5{
+  width: 300px;
+  height: 150px;
+  padding: 20px;
+  border: 5px solid blue;
+  background-image: url("images.jpg");
+  background-origin: border-box;
+}
+

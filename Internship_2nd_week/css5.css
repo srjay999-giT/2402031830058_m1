@@ -1,0 +1,29 @@
+/*-------------------- pseudo element-------------------------*/
+p::before {
+    content: "👉 ";
+}
+p::after {
+    content: " ✔";
+    color: green;
+}
+pre::first-letter {
+    font-size: 40px;
+    color: red;
+}
+p::first-line {
+    font-weight: bold;
+    color: blue;
+}
+::selection {
+    background-color: yellow;
+    color: black;
+}
+input::placeholder {
+    color: gray;
+    font-style: italic;
+}
+li::marker {
+    color: red;
+    font-size: 20px;
+}
+

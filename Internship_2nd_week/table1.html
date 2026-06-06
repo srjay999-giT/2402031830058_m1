@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table1.html</title>
+    <style>
+        table{
+            border: 2px solid black;
+        }
+        tr{
+              border: 2px solid black;
+        }
+        td{
+              border: 2px solid black;
+        }
+        th{
+              border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <p><h2>Task : Create a student detail table.</h2></p>
+    <table>
+        <tr>
+            <th style="background-color: rgb(81, 111, 231);">Sr_no</th>
+            <th style="background-color: aquamarine;">Name</th>
+            <th style="background-color: rgb(81, 111, 231);">Roll_no</th>
+            <th style="background-color: aquamarine;">Branch</th>
+            <th style="background-color: rgb(81, 111, 231);">college</th>
+        </tr>
+        <tr>
+            <td style="background-color: aquamarine;">1 </td>
+            <td style="background-color: rgb(81, 111, 231);">Raj</td>
+            <td style="background-color: aquamarine;">23</td>
+            <td style="background-color: rgb(81, 111, 231);">Biotechnology</td>
+            <td style="background-color: aquamarine;">Silver oak</td>
+        </tr>
+        <tr>
+            <td style="background-color: rgb(81, 111, 231);">2</td>
+            <td style="background-color: aquamarine;">Vraj</td>
+            <td style="background-color: rgb(81, 111, 231);">56</td>
+            <td style="background-color: aquamarine;" >IT</td>
+            <td style="background-color: rgb(81, 111, 231);">gujrat uni.</td>
+        </tr>
+        <tr>
+            <td style="background-color: aquamarine;">3</td>
+            <td style="background-color: rgb(81, 111, 231);">jay</td>
+            <td style="background-color: aquamarine;">87</td>
+            <td style="background-color: rgb(81, 111, 231);">Cse</td>
+            <td style="background-color: aquamarine;"  >President uni.</td>
+        </tr>
+    </table><br><br>
+
+    <table>
+        <tr>
+            <th>srno.</th>
+            <th>name</th>
+            <th>technology</th>
+            <th colspan="2">department</th>
+        </tr>
+
+        <tr>
+            <td>1.</td>
+            <td>ditya</td>
+            <td>django</td>
+            <td colspan="2">bca</td>
+        </tr>
+               <tr>
+            <td rowspan="3">1.</td>
+            <td>ditya</td>
+            <td>django</td>
+            <td colspan="2">bca</td>
+        </tr>
+               <tr>
+            <td>1.</td>
+            <td>ditya</td>
+            <td>django</td>
+            <td>bca</td>
+        </tr>
+               <tr>
+            <td>1.</td>
+            <td>ditya</td>
+            <td>django</td>
+            <td>bca</td>
+        </tr>
+    </table><br><br>
+
+    <table>
+        <tr>
+            <td colspan="3" style="text-align: center;">header</td>
+        </tr>
+        <tr>
+            <th>asidebar</th>
+            <th>main-section</th>
+            <th>sidebar</th>
+        </tr>
+        <tr>
+            <td colspan="3" style="text-align: center;">footer</td>
+        </tr>
+    </table><br><br>
+
+
+    <form>
+        <label for="">NAME :</label>
+        <input type="text" name="first-name" placeholder="enter your name">
+
+        <label for="">age :</label>
+        <input  type="number" min="20" max="40" ><br><br>
+        <label for="">email :</label>
+        <input type="email"  placeholder="enter your name">
+    </form>
+</body>
+</html>
